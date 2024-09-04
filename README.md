@@ -6,12 +6,6 @@
 pip install -r requirements.txt
 ```
 
-## Docker commands
-
-```
-
-```
-
 ## Example of usage
 
 ```
