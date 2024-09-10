@@ -17,7 +17,10 @@ def generate_excel(images_changed_data, data_folder, cover_all):
     for image_data in copied_data:
         label_groups = {}
         for changed_point in image_data['children']['box']:
-            if cover_all is True or changed_point['label'] != 'ignore':
+            if changed_point['label'] == 'ignore':
+                continue
+            else:
+            # if cover_all is True or changed_point['label'] != 'ignore':
                 label = changed_point['label']
                 if label not in label_groups:
                     label_groups[label] = []
